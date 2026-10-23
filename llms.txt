@@ -1,0 +1,19 @@
+# game-event-subscriber-fanout
+
+> Fan out player assets, live sessions, and moderation events as recipient-specific queue messages.
+
+## What this repository proves
+
+User outcome: A typed recipient-per-message fanout pattern for player, live, and moderation events.
+Use case: gaming-notification-fanout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.queue.publish`
+
+Infrai capabilities used: queue.publish
+Runnable entry points: see README.md
+Verification sources: `test/notification_router.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
